@@ -8,17 +8,20 @@
 | 课程 | 进度 | 所属专业 |
 |---|---|---|
 | 复变函数与积分变换 | 🚧 15%  | automation |
-| 人工智能导论 | ✅ 完  | automation |
+| 人工智能导论 | ♻️ 归纳中  | automation |
 | 大学物理学 | 🚧 40% | main |
 | 计算机网络 | 🚧 60% | automation |
 | C语言数据结构 | 🚧 60% | automation |
 | 模拟电子技术基础 | 🚧 60% | main |
+| 模拟电子技术基础（长安大学） | ✅ 完成 | main |
+| 电路理论（长安大学） | ✅ 完成 | main |
+| 复变函数（长安大学） | ✅ 完成 | automation |
+| 数字图像处理与机器视觉（长安大学） | ✅ 完成 | automation |
 | 线性代数 | 📅 待建 | main |
 | 高等数学 | 📅 待建 | main |
 ## 📦 快速开始
 ### 1. 整库克隆（含所有课程）
 `git clone https://github.com/Kyunana097/GDUT-REVIEW-NOTES.git`
-
 ### 2. 进入对应课程直接开背
 `cd GDUT-REVIEW-NOTES/NOTES`
 ## 🤝 贡献指南
@@ -32,3 +35,13 @@ Fork → 新建分支 → 提交 PR
 ## 最后祝大家：
 📖 平时不划水，考前不熬夜，
 🚀 晚上好好学，4.0不是梦！
+## 贡献者
+感谢以下小伙伴对本仓库的贡献（排名不分先后）：
+- abnormalvis
+- BI7KHI
+- charsiu-applepie
+- FFFuria
+- hongliu114
+- hzyj377
+- TONJA233
+- Varlin-iScience
