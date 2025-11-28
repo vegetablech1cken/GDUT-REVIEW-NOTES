@@ -40,7 +40,7 @@ class QuizApp:
         # 底部按钮
         btn_fr = ttk.Frame(root)
         btn_fr.pack(pady=10)
-        ttk.Button(btn_fr, text="提交", command=self.submit, bootstyle=SUCCESS, width=10).pack(side=LEFT, padx=5)
+        ttk.Button(btn_fr, text="提交", command=self.submit_answer, bootstyle=SUCCESS, width=10).pack(side=LEFT, padx=5)
         ttk.Button(btn_fr, text="交卷", command=self.wrap_up, bootstyle=WARNING, width=10).pack(side=LEFT, padx=5)
         self.score_lbl = ttk.Label(btn_fr, text="得分: 0", font=("", 12))
         self.score_lbl.pack(side=LEFT, padx=20)
@@ -71,26 +71,28 @@ class QuizApp:
             r.grid_remove()
         self.var.set(-1)
 
-    def submit(self):
-        ans = self.var.get()
-        if ans == -1:
+    def submit_answer(self):
+        """提交后显示正误，并出现【下一题】按钮"""
+        if not self.var.get():
             messagebox.showwarning("提示", "请先选择答案！")
             return
+
         q = self.questions[self.idx]
-        right = str(q["options"].index(q["answer"]))
-        if ans == right:
+        user_ans = self.var.get()          # 字母  A/B/C
+        right_ans = q["answer"]            # 字母  A/B/C
+        if user_ans == right_ans:
             self.score += 1
             self.animate(True)
         else:
             self.wrong.append(q)
             self.animate(False)
-        self.score_lbl["text"] = f"得分: {self.score}"
-        self.idx += 1
-        if self.idx < len(self.questions):
-            self.update_pb()
-            self.show()
-        else:
-            self.wrap_up()
+
+        self.score_label.config(text=f"得分: {self.score}")
+        self.submit_button.config(state="disabled")      # 禁用提交
+        self.next_button.grid()                          # 显示下一题
+        # 显示正确答案
+        idx_right = ord(right_ans) - ord("A")
+        self.options[idx_right].config(fg=self.success, font=self.font_opt + ("bold",))
 
     def animate(self, ok: bool):
         bg = "success" if ok else "danger"
@@ -2739,11 +2741,6 @@ if __name__ == "__main__":
 
 ]
 
-# 创建 Tkinter 窗口
-root = tk.Tk()
-
-# 创建 QuizApp 实例
-app = QuizApp(root, questions)
-
-# 启动 Tkinter 主循环
+root = ttk.Window()
+QuizApp(root, questions)
 root.mainloop()
