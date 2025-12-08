@@ -15,15 +15,20 @@
 | ---------------------------------- | ------- | ---------- |
 | 复变函数与积分变换                 | 🚧 20%  | main       |
 | 人工智能导论                       | ✅ 完成 | automation |
-| 大学物理学                         | ✅ 完成 | main       |
+| 大学物理学（上）                   | ✅ 完成 | main       |
+| 大学物理学（下）                   | 🚧 60% | main       |
 | 计算机网络                         | 🚧 60%  | automation |
 | C语言数据结构                      | ✅ 完成  | automation |
 | 大学物理实验                       | ✅ 完成 | main       |
+| 电子电工技术（电路）实验             | ✅ 完成 | main       |
 | 工程训练（金工实习）               | ✅ 完成 | main       |
 | 模拟电子技术基础                   | 🚧 60%  | main       |
 | 思想道德与法治                     | ✅ 完成 | main       |
 | 国家安全                           | ✅ 完成 | main       |
 | 工程制图                           | ✅ 完成 | automation |
+| 军事理论                         | ✅ 完成 | main       |
+| 形势与政策                         | ✅ 完成 | main       |
+| 学生手册                         | ✅ 完成 | main       |
 | 模拟电子技术基础（长安大学）       | ✅ 完成 | main       |
 | 电路理论（长安大学）               | ✅ 完成 | main       |
 | 复变函数（长安大学）               | ✅ 完成 | main       |
@@ -75,12 +80,14 @@ Fork → 新建分支 → 提交 PR
 - [FFFuria](https://github.com/FFFuria)
 - [hongliu114](https://github.com/hongliu114)
 - [hzyj377](https://github.com/hzyj377)
+- [liyunana](https://github.com/liyunana)
 - [molqzone](https://github.com/molqzone)
 - [RanderDouble](https://github.com/RanderDouble)
 - [TONJA233](https://github.com/TONJA233)
 - [Varlin-iScience](https://github.com/Varlin-iScience)
+- [vegetablech1cken](https://github.com/vegetablech1cken)
 - [Xuanna024](https://github.com/BI7KHI)
-- [molqzone](https://github.com/molqzone)
+- [Zoxel-rin](https://github.com/Zoxel-rin)
   `<a href="https://github.com/Kyunana097/GDUT-REVIEW-NOTES/graphs/contributors">`
   `<img src="https://contrib.rocks/image?repo=Kyunana097/GDUT-REVIEW-NOTES" />`
   `</a>`
