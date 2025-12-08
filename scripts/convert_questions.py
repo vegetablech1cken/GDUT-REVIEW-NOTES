@@ -96,7 +96,6 @@ def process_block(block_lines):
 
     # 查找答案
     joined = '\n'.join(block_lines)
-    ans = []
     am = answer_re.search(joined)
     if am:
         rawans = am.group(1)
