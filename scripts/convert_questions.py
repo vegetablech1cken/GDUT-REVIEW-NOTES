@@ -14,7 +14,7 @@ CSV_DIR = os.path.join(INPUT_DIR, "CSV")
 os.makedirs(MD_DIR, exist_ok=True)
 os.makedirs(CSV_DIR, exist_ok=True)
 
-question_start_re = re.compile(r'^\s*\d+\s*[\.\.、\)）]')
+question_start_re = re.compile(r'^\s*\d+\s*[\.、\)）]')
 option_re = re.compile(r'^\s*([A-D]|[A-D]、|\([A-D]\)|（[A-D]）|【([A-D])】)')
 option_letter_re = re.compile(r'([A-D])')
 answer_re = re.compile(r'答案[:：\s]*([A-D,，、\s]+|正确|错误|√|×|T|F|对|错)', re.IGNORECASE)
