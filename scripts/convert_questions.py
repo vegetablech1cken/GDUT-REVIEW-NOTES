@@ -190,7 +190,7 @@ def save_csv(qs, src_name, out_path):
             'source_file': src_name,
             'question': q['question'],
             'type': q['type'],
-            'answer': '|'.join(q['answer']) if q['answer'] else '' ,
+            'answer': '|'.join(q['answer']) if q['answer'] else '',
             'raw': q['raw']
         }
         for idx, opt in enumerate(q.get('options', [])):
