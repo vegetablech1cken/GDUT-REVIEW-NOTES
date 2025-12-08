@@ -200,7 +200,7 @@ def save_csv(qs, src_name, out_path):
 
 def main():
     all_qs = []
-    files = [f for f in os.listdir(INPUT_DIR) if f.lower().endswith('.docx')]
+    files = [f for f in os.listdir(INPUT_DIR) if f.lower().endswith('.docx') and not f.startswith('~$')]
     if not files:
         print('未找到 .docx 文件，目录：', INPUT_DIR)
         return
