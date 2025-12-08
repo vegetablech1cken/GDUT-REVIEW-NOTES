@@ -21,6 +21,10 @@ answer_re = re.compile(r'答案[:：\s]*([A-D,，、\s]+|正确|错误|√|×|T|
 
 
 def split_lines_from_docx(path):
+    if not os.path.exists(path):
+        raise FileNotFoundError(f"文件不存在: {path}")
+    if not os.access(path, os.R_OK):
+        raise PermissionError(f"无法读取文件: {path}")
     doc = Document(path)
     lines = []
     for p in doc.paragraphs:
