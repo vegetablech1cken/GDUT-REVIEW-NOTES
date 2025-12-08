@@ -165,7 +165,7 @@ def parse_docx(path):
             q = process_block(b)
             qs.append(q)
         except (ValueError, IndexError, KeyError, AttributeError) as e:
-            print('处理题目块失败:', e)
+            print(f'处理题目块失败 (行内容: {b[0][:50]}...): {e}')
     return qs
 
 
